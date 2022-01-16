@@ -1,0 +1,11 @@
+@include media-breakpoint-only(sm){
+    
+@include responsive_css();
+
+}
+
+@include media-breakpoint-only(xs){
+    
+    @include responsive_css();
+    
+    }

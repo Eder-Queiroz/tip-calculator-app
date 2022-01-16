@@ -25,6 +25,41 @@ $color_white: hsl(0, 0%, 100%);
     direction: rtl;
 }
 
+@mixin responsive_css {
+    main{
+        height: 100%;
+        .bg_logo{
+            width: 82px;
+            height: 50px;
+            margin: 40px 0;
+        }
+    }
+    .container{
+        max-width: none;
+        padding: 0;
+    }
+
+    .c-display{
+        flex-direction: column;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        margin: 0;
+        padding: 20px;
+
+        .interativo{
+            width: 100%;
+            justify-content: start;
+        }
+
+        .painel{
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "base";
 @import "container";
+@import "responsive";
