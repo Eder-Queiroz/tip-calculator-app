@@ -7,7 +7,13 @@ $color_light_grayish_cyan: hsl(184, 14%, 56%);
 $color_very_light_grayish_cyan: hsl(180, 9%, 90%);
 $color_white: hsl(0, 0%, 100%);
 
+.font{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 @mixin input_style {
+    @extend .font;
     width: 100%;
     height: 40px;
     padding: 8px;
@@ -16,8 +22,6 @@ $color_white: hsl(0, 0%, 100%);
     border: 0;
     border-radius: 8px;
     outline: none;
-    font-size: 1.2rem;
-    font-weight: bold;
     direction: rtl;
 }
 

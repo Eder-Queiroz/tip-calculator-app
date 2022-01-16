@@ -29,8 +29,7 @@
                 .btn_tip{
                     @extend .tamanho_btn;
                     background-color: $color_dark_cyan;
-                    font-size: 1.2rem;
-                    font-weight: bold;
+                    @extend .font;
                     border-radius: 6px;
                     cursor: pointer;
                     color: $color_white;
@@ -58,6 +57,34 @@
         color: $color_white;
         width: 46%;
         height: 90%;
+        padding: 50px 40px;
         border-radius: 20px;
+
+        .container_items{
+            span{
+                @extend .font;
+                p{
+                    font-size: 1rem;
+                    font-weight: normal;
+                    color: rgba(255,255,255,.6);
+                }
+            }
+            
+            div{
+                @extend .font;
+                font-size: 2.2rem;
+                text-align: right;
+                color: $color_primery;
+                margin-top: -10px;
+            }
+        }
+
+        button{
+            width: 100%;
+            background-color: $color_light_cyan;
+            color: $color_dark_cyan;
+            border: none;
+            @extend .font;
+        }   
     }
 }
