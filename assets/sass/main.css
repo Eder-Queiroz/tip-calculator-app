@@ -12088,4 +12088,76 @@ main .bg_logo {
   color: #00494d;
   border: none;
 }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  main {
+    height: 100%;
+  }
+  main .bg_logo {
+    width: 82px;
+    height: 50px;
+    margin: 40px 0;
+  }
+  .container {
+    max-width: none;
+    padding: 0;
+  }
+  .c-display {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+  }
+  .c-display .interativo {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .c-display .painel {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  main {
+    height: 100%;
+  }
+  main .bg_logo {
+    width: 82px;
+    height: 50px;
+    margin: 40px 0;
+  }
+  .container {
+    max-width: none;
+    padding: 0;
+  }
+  .c-display {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+  }
+  .c-display .interativo {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .c-display .painel {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
