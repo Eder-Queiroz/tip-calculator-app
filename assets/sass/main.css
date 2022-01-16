@@ -11981,14 +11981,85 @@ main .bg_logo {
   background-size: cover;
 }
 
+.tamanho_btn, .c-display .interativo .container_items .container_btn .btn_tip, .c-display .interativo .container_items .container_btn input {
+  width: calc(33.3% - 20px);
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+.logo_input, .c-display .interativo .container_items .logo_bill, .c-display .interativo .container_items .logo_people {
+  width: 12px;
+  height: 20px;
+  background-size: cover;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+}
+
 .c-display {
   width: 90%;
-  max-width: 720px;
-  height: 360px;
+  max-width: 980px;
+  height: 420px;
   background-color: white;
   margin-top: 60px;
   border-radius: 20px;
   -webkit-box-shadow: 10px 8px 10px -8px rgba(0, 0, 0, 0.5);
           box-shadow: 10px 8px 10px -8px rgba(0, 0, 0, 0.5);
+}
+
+.c-display .interativo {
+  width: 49%;
+  height: 100%;
+}
+
+.c-display .interativo .container_items {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.c-display .interativo .container_items:last-child {
+  margin-bottom: 0;
+}
+
+.c-display .interativo .container_items input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  margin-top: 6px;
+  background-color: #e3e8e8;
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  direction: rtl;
+}
+
+.c-display .interativo .container_items .container_btn .btn_tip {
+  background-color: #00494d;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.c-display .interativo .container_items .logo_bill {
+  background-image: url(../images/icon-dollar.svg);
+}
+
+.c-display .interativo .container_items .logo_people {
+  width: 16px;
+  background-image: url(../images/icon-person.svg);
+}
+
+.c-display .painel {
+  background-color: #00494d;
+  color: white;
+  width: 46%;
+  height: 90%;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */

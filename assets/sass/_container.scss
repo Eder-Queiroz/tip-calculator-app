@@ -1,9 +1,63 @@
 .c-display{
     width: 90%;
-    max-width: 720px;
-    height: 360px;
+    max-width: 980px;
+    height: 420px;
     background-color: $color_white;
     margin-top: 60px;
     border-radius: 20px;
     box-shadow: 10px 8px 10px -8px rgba(0,0,0,0.5);
+
+    .interativo{
+        // background-color: #ccc;
+        width: 49%;
+        height: 100%;
+
+        .container_items{
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            input{
+                @include input_style();
+            }
+
+            .container_btn{
+                .btn_tip{
+                    @extend .tamanho_btn;
+                    background-color: $color_dark_cyan;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    color: $color_white;
+                }
+                input{
+                    @extend .tamanho_btn;
+                }
+            }
+
+            .logo_bill{
+                @extend .logo_input;
+                background-image: url(../images/icon-dollar.svg);
+            }
+
+            .logo_people{
+                @extend .logo_input;
+                width: 16px;
+                background-image: url(../images/icon-person.svg);
+            }
+        }
+    }
+
+    .painel{
+        background-color: $color_dark_cyan;
+        color: $color_white;
+        width: 46%;
+        height: 90%;
+        border-radius: 20px;
+    }
 }
