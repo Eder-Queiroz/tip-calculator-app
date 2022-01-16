@@ -1,4 +1,30 @@
 
+$color_primery: hsl(172, 67%, 45%);
+$color_dark_cyan: hsl(183, 100%, 15%);
+$color_light_cyan: hsl(185, 41%, 84%);
+$color_dark_grayish_cyan: hsl(186, 14%, 43%);
+$color_light_grayish_cyan: hsl(184, 14%, 56%);
+$color_very_light_grayish_cyan: hsl(180, 9%, 90%);
+$color_white: hsl(0, 0%, 100%);
+
+.font{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@mixin input_style {
+    @extend .font;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin-top: 6px;
+    background-color: $color_very_light_grayish_cyan;
+    border: 0;
+    border-radius: 8px;
+    outline: none;
+    direction: rtl;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import "base";
 @import "container";
-@import "../node_modules/bootstrap/scss/bootstrap";
