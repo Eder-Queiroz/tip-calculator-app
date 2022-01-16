@@ -1,0 +1,65 @@
+
+$color_primery: hsl(172, 67%, 45%);
+$color_dark_cyan: hsl(183, 100%, 15%);
+$color_light_cyan: hsl(185, 41%, 84%);
+$color_dark_grayish_cyan: hsl(186, 14%, 43%);
+$color_light_grayish_cyan: hsl(184, 14%, 56%);
+$color_very_light_grayish_cyan: hsl(180, 9%, 90%);
+$color_white: hsl(0, 0%, 100%);
+
+.font{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@mixin input_style {
+    @extend .font;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin-top: 6px;
+    background-color: $color_very_light_grayish_cyan;
+    border: 0;
+    border-radius: 8px;
+    outline: none;
+    direction: rtl;
+}
+
+@mixin responsive_css {
+    main{
+        height: 100%;
+        .bg_logo{
+            width: 82px;
+            height: 50px;
+            margin: 40px 0;
+        }
+    }
+    .container{
+        max-width: none;
+        padding: 0;
+    }
+
+    .c-display{
+        flex-direction: column;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        margin: 0;
+        padding: 20px;
+
+        .interativo{
+            width: 100%;
+            justify-content: start;
+        }
+
+        .painel{
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "base";
+@import "container";
+@import "responsive";
