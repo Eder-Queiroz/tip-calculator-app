@@ -16,6 +16,52 @@
 </head>
 <body>
 
+  <main class="container d-flex flex-column justify-content-center align-items-center">
+    <div class="container bg_logo"></div>
+
+    <div class="container d-flex justify-content-center align-items-center">
+      
+      <div class="interativo">
+        
+        <div class="container_items">
+          <span>Bill</span>
+          <input type="number" name="bill" id="bill" placeholder="$">
+        </div><!--container_items-->
+
+        <div class="container_items">
+          <span>Select Tip %</span>
+          <div class="btn_tip" id="cinco">5%</div>
+          <div class="btn_tip" id="dez">10%</div>
+          <div class="btn_tip" id="quinze">15%</div>
+          <div class="btn_tip" id="vinte_cinco">25%</div>
+          <div class="btn_tip" id="cinquenta">50%</div>
+          <input type="number" name="custum" id="custum" placeholder="Custom">
+        </div><!--container_items-->
+        <div class="container_items">
+          <span>Number of People</span>
+          <input type="number" name="people" id="people">
+        </div><!--container_items-->
+
+      </div><!--interativo-->
+
+      <div class="painel">
+
+        <div class="container_items">
+          <span>Tip Amount <p>/person</p></span>
+          <div id="value_amount">$</div>
+        </div><!--container_items-->
+
+        <div class="container_items">
+          <span>Total <p>/ person</p></span>
+          <div id="value_total"></div>
+        </div><!--container_items-->
+
+        <button>Reset</button>
+
+      </div><!--painel-->
+      
+    </div>
+  </main>
 
   <script src="assets/node_modules/jquery/dist/jquery.min.js"></script>
   <script src="assets/node_modules/popper.js/dist/popper-utils.min.js"></script>
