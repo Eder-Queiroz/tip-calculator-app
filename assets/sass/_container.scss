@@ -26,6 +26,7 @@
             }
 
             .container_btn{
+
                 .btn_tip{
                     @extend .tamanho_btn;
                     background-color: $color_dark_cyan;
@@ -33,6 +34,9 @@
                     border-radius: 6px;
                     cursor: pointer;
                     color: $color_white;
+                }
+                input[type=radio]{
+                    display: none
                 }
                 input{
                     @extend .tamanho_btn;

@@ -12047,6 +12047,10 @@ main .bg_logo {
   color: white;
 }
 
+.c-display .interativo .container_items .container_btn input[type=radio] {
+  display: none;
+}
+
 .c-display .interativo .container_items .logo_bill {
   background-image: url(../images/icon-dollar.svg);
 }
