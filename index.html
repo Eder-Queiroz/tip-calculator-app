@@ -28,10 +28,11 @@
       
       <div class="interativo d-flex flex-column justify-content-center align-items-start">
         
-        <div class="container_items">
+        <div class="container_items position-relative">
           <span>Bill</span>
+          <span class="erro_zero" id="erro_zero_bill">Can't be zero</span>
           <div class="logo_bill"></div>
-          <input class="d-block" type="number" name="bill" id="bill" placeholder="0">
+          <input class="d-block" type="number" name="bill" id="bill" placeholder="0" min="0">
         </div><!--container_items-->
 
         <div class="container_items">
@@ -59,13 +60,14 @@
             <input type="radio" name="value_btn_tip" id="cinquenta">
             <label class="btn_tip col" for="cinquenta">50%</label>
 
-            <input type="number" name="custum" id="custum" placeholder="Custom">
+            <input type="number" name="custom" id="custom" placeholder="Custom" min="0">
           </div>
         </div><!--container_items-->
-        <div class="container_items">
+        <div class="container_items position-relative">
           <span>Number of People</span>
+          <span class="erro_zero" id="erro_zero_people">Can't be zero</span>
           <div class="logo_people"></div>
-          <input class="d-block" type="number" name="people" id="people" placeholder="0">
+          <input class="d-block" type="number" name="people" id="people" placeholder="0" min="0">
         </div><!--container_items-->
 
       </div><!--interativo-->
@@ -81,7 +83,7 @@
           
         </div><!--container_items-->
 
-        <button class="btn btn-primary">RESET</button>
+        <button class="btn btn-primary" id="btn">RESET</button>
 
       </div><!--painel-->
       
@@ -91,6 +93,8 @@
   <script src="assets/node_modules/jquery/dist/jquery.min.js"></script>
   <script src="assets/node_modules/popper.js/dist/popper-utils.min.js"></script>
   <script src="assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/style_input_erro.js"></script>
+  <script src="assets/js/calcular.js"></script>
 
 </body>
 </html>
