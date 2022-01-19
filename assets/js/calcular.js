@@ -23,6 +23,8 @@ function calcular(){
         for(i = 0; i < radios.length; i++) {
     
             if(radios[i].checked) {
+                // radios[i].classList.toggle('active');
+
                 let valor_radio_checked = radios[i].value;
                 
                 let resultado_valor_gorjeta = (input_bill * valor_radio_checked) / input_people;
