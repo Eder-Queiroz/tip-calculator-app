@@ -36,7 +36,7 @@
                     color: $color_white;
                 }
                 input[type=radio]{
-                    display: none;
+                    display: none
                 }
                 input{
                     @extend .tamanho_btn;

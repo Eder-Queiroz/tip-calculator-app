@@ -11993,13 +11993,6 @@ main .bg_logo {
   padding: 5px;
 }
 
-.erro_zero {
-  color: red;
-  position: absolute;
-  right: 0;
-  display: none;
-}
-
 .logo_input, .c-display .interativo .container_items .logo_bill, .c-display .interativo .container_items .logo_people {
   width: 12px;
   height: 20px;
